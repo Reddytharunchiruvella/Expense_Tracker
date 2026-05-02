@@ -1,0 +1,47 @@
+.expense-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.expense-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.expense-icon {
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fee2e2;
+  color: #dc2626;
+  border-radius: 15px;
+  font-size: 22px;
+}
+
+.expense-left h4 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 4px;
+}
+
+.expense-left p {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.expense-right {
+  font-size: 18px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.expense-right h4 {
+  color: #dc2626;
+}

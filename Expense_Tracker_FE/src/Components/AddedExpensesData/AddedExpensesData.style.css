@@ -1,0 +1,9 @@
+.Expdata-container {
+  background: #ffffff;
+  margin: 40px auto;
+  padding: 25px 30px;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 950px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}

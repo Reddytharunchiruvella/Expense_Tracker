@@ -1,0 +1,8 @@
+img {
+  width: 42px;
+  height: 42px;
+  background: #f3f4f6;
+  border-radius: 8px;
+  object-fit: cover;
+  transform: translateY(20%);
+}
