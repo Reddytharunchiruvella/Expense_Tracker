@@ -1,0 +1,74 @@
+{
+  "Expdata": [
+    {
+      "id": 1,
+      "title": "titlek",
+      "amount": 300,
+      "category": "Food",
+      "date": "18-5-2025"
+    },
+    {
+      "id": 2,
+      "title": "Tierra",
+      "amount": 200,
+      "category": "coffee",
+      "date": "20-6-2025"
+    },
+    {
+      "id": 3,
+      "title": "Vegeta",
+      "amount": 689,
+      "category": "shopping",
+      "date": "3-11-2025"
+    },
+    {
+      "id": 4,
+      "title": "Freezer No. 79",
+      "amount": 344,
+      "category": "Food",
+      "date": "20-3-2025"
+    },
+    {
+      "id": 5,
+      "title": "Kanassa",
+      "amount": 222,
+      "category": "coffee",
+      "date": "22-9-2025"
+    },
+    {
+      "id": 6,
+      "title": "Monmar",
+      "amount": 899,
+      "category": "bills",
+      "date": "24-9-2025"
+    },
+    {
+      "id": 7,
+      "title": "Yardrat",
+      "amount": 567,
+      "category": "Travel",
+      "date": "2-4-2025"
+    },
+    {
+      "id": 8,
+      "title": "Kaiō del Norte",
+      "amount": 445,
+      "category": "Travel",
+      "date": "20-12-2025"
+    },
+    {
+      "id": 9,
+      "title": "Makyo",
+      "amount": 657,
+      "category": "Coffee",
+      "date": "22-2-2025"
+    },
+    {
+      "id": 10,
+      "title": "Babari",
+      "amount": 999,
+      "category": "Bills",
+      "date": "20-2-2025"
+    }
+  ]
+}
