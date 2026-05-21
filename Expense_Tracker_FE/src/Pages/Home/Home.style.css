@@ -3,7 +3,7 @@
   font-family: "Segoe UI", sans-serif;
 }
 
-.user-name{
+.user-name {
   text-align: center;
   margin: 30px 0;
 }
@@ -13,4 +13,27 @@
   gap: 30px;
   justify-content: center;
   margin-top: 60px;
+}
+
+.Home-save {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.saveBtn {
+  padding: 14px 30px;
+  border: none;
+  border-radius: 14px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+  border: 1px solid black;
+}
+
+.saveBtn:hover {
+  color: white;
+  background: linear-gradient(135deg, #7c3aed, #a855f7);
 }

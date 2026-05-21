@@ -5,6 +5,6 @@ import { validateExpense } from "../validations/expenses.validation.js";
 const router = express.Router();
 
 router.get("/expenses", getExpenses);
-router.post("/add-expense",validateExpense, addExpense);
+router.post("/add-expense", validateExpense, addExpense);
 
 export default router;

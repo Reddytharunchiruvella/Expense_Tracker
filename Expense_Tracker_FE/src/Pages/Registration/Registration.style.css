@@ -1,0 +1,49 @@
+.main-container {
+  height: 100vh;
+  background: #f2f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-box {
+  background: #ffffff;
+  padding: 40px 50px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+.Register-box,
+.Login-box {
+  width: 450px;
+  text-align: center;
+}
+
+.main-box button {
+  padding: 14px;
+  margin: 5px 50px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 14px;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+  background: linear-gradient(90deg, #7637e2, #a855f7);
+  transition: 0.3s;
+  position: relative;
+  z-index: 20;
+}
+
+.Register-box button,
+.Login-box button {
+  width: 100%;
+  margin: 10px 0px;
+}
+
+button:hover {
+  opacity: 0.8;
+  transform: translateY(-5px);
+}

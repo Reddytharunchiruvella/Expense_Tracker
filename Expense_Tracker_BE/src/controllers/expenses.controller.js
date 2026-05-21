@@ -4,12 +4,12 @@ const addExpense = async (req, res) => {
   try {
     const { title, amount, date, user_id } = req.body;
 
-    await client.query(
+    const result = await client.query(
       "INSERT INTO expenses (title, amount, date, user_id) VALUES ($1,$2,$3,$4)",
       [title, amount, date, user_id],
     );
 
-    res.json({ message: "Expenses added successfully" });
+    res.status(200).json(result.rows[0]);
   } catch (error) {
     res.status(500).json({ error: error.message });
   }
@@ -17,7 +17,6 @@ const addExpense = async (req, res) => {
 
 const getExpenses = async (req, res) => {
   const user_id = req.query.user_id;
-  console.log(user_id);
   try {
     const result = await client.query(
       `SELECT * FROM expenses

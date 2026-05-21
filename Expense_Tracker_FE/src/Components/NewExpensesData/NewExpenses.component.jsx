@@ -11,7 +11,16 @@ export const NewExpensesData = ({ curExpData }) => {
           </div>
           <div>
             <h4>{curExpData.title}</h4>
-            <p>{curExpData.date}</p>
+            <p>
+              {new Date(curExpData.date)
+                .toLocaleDateString("en-GB", {
+                  day: "numeric",
+                  month: "short",
+                  year: "numeric",
+                })
+                .toLowerCase()
+                .replace(",", "")}
+            </p>
           </div>
         </div>
         <div className="expense-right">

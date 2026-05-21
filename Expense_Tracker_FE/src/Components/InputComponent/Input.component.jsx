@@ -14,19 +14,11 @@ export const InputText = ({ PHname, value, onChange }) => {
   );
 };
 
-// export const InputPass = ({ PHname }) => {
-//   return (
-//     <>
-//       <input type="password" placeholder={PHname} className="input-field" />
-//     </>
-//   );
-// };
-
 export const InputDate = ({ PHname, value, onChange }) => {
   return (
     <>
       <input
-        type="Date"
+        type="date"
         placeholder={PHname}
         className="input-field"
         value={value}

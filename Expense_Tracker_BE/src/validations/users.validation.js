@@ -1,16 +1,26 @@
-export const validateUser = (req, res, next) => {
-  const { name, mobile, salary } = req.body;
+export const validateLoginUser = (req, res, next) => {
+  const { mobile } = req.body;
 
-  if (!name || name.trim() === "") {
-    return res.status(400).json({ error: "Name is required" });
-  }
+  const mobileStr = String(mobile);
 
-  if (!mobile || mobile.length !== 10) {
+  if (!mobileStr || mobileStr.length !== 10) {
     return res.status(400).json({ error: "Valid mobile number required" });
   }
 
-  if (!salary || Number(salary) <= 0) {
-    return res.status(400).json({ error: "Salary must be greater than 0" });
+  next();
+};
+
+export const validateRegisterUser = (req, res, next) => {
+  const { name, mobile } = req.body;
+
+  if (!name || name.trim() === "") {
+    return res.status(400).json({ error: "Valid name required" });
+  }
+
+  const mobileStr = String(mobile);
+
+  if (!mobileStr || mobileStr.length !== 10) {
+    return res.status(400).json({ error: "Valid mobile number required" });
   }
 
   next();

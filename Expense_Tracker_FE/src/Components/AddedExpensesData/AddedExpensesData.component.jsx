@@ -9,11 +9,11 @@ export const AddedExpensesData = ({ expenses }) => {
       <div className="Expdata-container">
         <Heading heading="All Expenses" />
         {expenses && expenses.length > 0 ? (
-          expenses.map((curExp, index) => (
-            <NewExpensesData key={curExp.id || index} curExpData={curExp} />
+          expenses.map((curExp) => (
+            <NewExpensesData curExpData={curExp} />
           ))
         ) : (
-          <p>No expenses found</p>
+          <p>No Expenses Found</p>
         )}
       </div>
     </>
